@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Humidity</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .navbar-brand {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 30px;
+            /* margin-left: 10px; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h3 {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 30px;
+            color: #17a2b8;
+            /* margin-left: 10px; */
+            /* padding-left: 10px; */
+            /* padding-right: 10px; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" style="background-color: lightgrey">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <!-- Logo -->
+            <a class="navbar-brand bg-info font-weight-bold" href="index.html">Latitude</a>
+
+            <!-- To show 3 line bar on the right if the screen minimize -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <!-- Unorder list of nav bar -->
+                <ul class="navbar-nav">
+                    <!-- Dropdown item -->
+                    <li class="nav-item dropdown active">
+                        <!-- Fisrt drop down -->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <!-- the value -->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Visualization_temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Visualization_humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparisson.html">Comparisson</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="row" style="padding-top: 40px; padding-left: 30px;padding-right: 30px">
+            <div class="col-lg-8">
+                <h3><strong>Humidity</strong></h3>
+                <div class="text-center">
+                    <img src="images/Fig2.png" alt="Placeholder" class="float-left mr-4" style="width:95%" ;>
+                    <!-- <img src="http://placehold.it/200x200" alt="Placeholder" class="img-thumbnail float-left mr-2"> -->
+
+                </div>
+                <div>
+                    <p>
+                        <br>
+                        As expected, the weather becomes significantly warmer as one approaches the equator (0 Def.
+                        Lattitude). More interestingly, however, is the fact that the southern hemisphere tends to be
+                        warmer this time of the year than the northern hemisphere. This may be due to the tilt of the
+                        earth at the time of the year this data was gathered.
+                    </p>
+                </div>
+            </div>
+            <!-- DO not Change -->
+            <div class="col-lg-4">
+                <h3><strong>Visualizations</strong></h3>
+
+                <hr>
+                <div class="clearfix">
+                    <a href="Visualization_temp.html">
+                        <img src="images/Fig1.png" alt="Placeholder" class="img-thumbnail float-left  mr-1 mb-1"
+                            style="width:150px;height:150px;">
+                    </a>
+                    <a href="Visualization_humidity.html">
+                        <img src="images/Fig2.png" alt="Placeholder" class="img-thumbnail float-left  mr-1 mb-1 border border-primary"
+                            style="width:150px;height:150px;">
+                    </a>
+                    <a href="Visualization_Cloudiness.html">
+                        <img src="images/Fig3.png" alt="Placeholder" class="img-thumbnail float-left  mr-1 mb-1"
+                            style="width:150px;height:150px;">
+                    </a>
+                    <a href="Visualization_WindSpeed.html">
+                        <img src="images/Fig4.png" alt="Placeholder" class="img-thumbnail float-left  mr-1 mb-1"
+                            style="width:150px;height:150px;">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="card text-center">
+            <hr style="height:5px;background-color:#17a2b8;bottom:0;margin: 0 ">
+            <div class="card-footer text-light bg-secondary ">
+                @ Copyright Coding Bootcamp 2019
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
